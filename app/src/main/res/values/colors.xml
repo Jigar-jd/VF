@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#ff4081</color>
+    <color name="colorPrimaryDark">#fd505050</color>
+    <color name="colorAccent">#ff4073</color>
+    <color name="TextWhite">#ffffff</color>
+    <color name="White">#ffffff</color>
+    <color name="splsah_bg">#ffffff</color>
+    <color name="editTxtBg">#dadada</color>
+</resources>

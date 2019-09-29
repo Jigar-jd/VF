@@ -1,0 +1,159 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.student_login.vardaan.About.HomeFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relatibeLayoutHome">
+        <android.support.v4.view.ViewPager
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:id="@+id/viewPager">
+
+        </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/sliderDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/viewPager"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:layout_below="@id/sliderDots">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:paddingTop="25dp"
+            android:src="@drawable/vj"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#0d0d0d"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="18dp"
+            android:textColor="#fc2c62"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Varsha Jaisalmeria"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="25dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#060606"
+            android:text="@string/varsha_quaote"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textSize="20dp"
+            android:textColor="#060606"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="left"
+            android:text="-MARGARET"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:paddingTop="25dp"
+            android:src="@drawable/ds"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#0d0d0d"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#fc2c62"
+            android:text="Darshan Salunke"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="25dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#060606"
+            android:text="@string/darshan_quote"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#060606"
+            android:gravity="left"
+            android:text="-MAHATMA GANDHI"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/contentLinear">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="UpComing Events"
+                android:fontFamily="@font/lucida_vardaan"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="28dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/UpcomingRecycle"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:layout_below="@+id/title"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

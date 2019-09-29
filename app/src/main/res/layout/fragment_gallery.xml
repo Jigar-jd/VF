@@ -1,0 +1,47 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student_login.vardaan.Gallery.GalleryFragment"
+    android:background="@color/colorPrimary">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter:"
+            android:paddingTop="13dp"
+            android:paddingLeft="7dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserrat_regular"/>
+
+        <Spinner
+            android:id="@+id/YearSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtFilter"
+            android:paddingLeft="5dp">
+        </Spinner>
+        <Spinner
+            android:id="@+id/CategoriesSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/YearSpinner"
+            android:paddingLeft="5dp"></Spinner>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/GalleryReView"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:columnWidth="100dp"
+        android:scrollbars="horizontal"
+        android:layout_below="@id/YearSpinner"/>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

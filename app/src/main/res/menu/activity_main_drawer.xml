@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/ic_menu_about"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_menu_activites"
+            android:title="Activities" />
+        <item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_menu_projects"
+            android:title="Projects" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="Contact Us" />
+    </group>
+    <item android:title="Our Youth">
+        <menu>
+            <item
+                android:id="@+id/nav_team"
+                android:icon="@drawable/ic_menu_team"
+                android:title="Our Team" />
+            <item
+                android:id="@+id/nav_applyVoulnteer"
+                android:icon="@drawable/ic_menu_apply"
+                android:title="Apply for volunteer" />
+        </menu>
+    </item>
+    <item android:title="Our Founders">
+        <menu>
+            <item
+                android:id="@+id/nav_varsha"
+                android:icon="@drawable/ic_menu_girl"
+                android:title="Varsha Jaisalmeria" />
+            <item
+                android:id="@+id/nav_darshan"
+                android:icon="@drawable/ic_menu_man"
+                android:title="Darshan Salunke" />
+        </menu>
+    </item>
+    <item android:title="Donate">
+        <menu>
+            <item
+                android:id="@+id/nav_donate"
+                android:icon="@drawable/ic_menu_donate"
+                android:title="Donate" />
+
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

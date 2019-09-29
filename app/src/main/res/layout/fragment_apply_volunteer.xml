@@ -1,0 +1,266 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student_login.vardaan.Volunteer.applyVolunteerFragment"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/applyVolunteer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:fontFamily="@font/droidserif_regular"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:text="APPLY FOR VOLUNTEER"
+            android:textColor="#ffffff"
+            android:textSize="36dp" />
+
+        <EditText
+            android:id="@+id/FirstName"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/applyVolunteer"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"
+            android:hint="FIRST NAME*"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/LastName"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/FirstName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"
+            android:hint="LAST NAME*"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/EmailID"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/LastName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"
+            android:hint="EMAIL ID*"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ContactNumber"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/EmailID"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"
+            android:hint="CONTACT NUMBER*"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/ContactNumber"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"
+            android:hint="City*"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/Preference"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/City"
+            android:layout_below="@+id/City"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"></Spinner>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Preference"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/droidserif_regular"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="GENDER"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/RbGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Preference"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ff4081"
+                android:fontFamily="@font/droidserif_regular"
+                android:text="MALE"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ff4081"
+                android:fontFamily="@font/droidserif_regular"
+                android:text="FEMALE"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/birthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RbGender"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/droidserif_regular"
+            android:paddingLeft="20dp"
+            android:text="BIRTH DATE "
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/DateBox"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/birthText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/droidserif_regular"
+            android:hint="DD/MM/YYYY"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20dp"></EditText>
+
+        <TextView
+            android:id="@+id/BloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DateBox"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/droidserif_regular"
+            android:paddingLeft="20dp"
+            android:text="BLOOD GROUP: "
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/bloodGroup"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/DateBox"
+            android:layout_below="@+id/BloodGroup"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"></Spinner>
+
+        <TextView
+            android:id="@+id/AreYou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bloodGroup"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/droidserif_regular"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="Are You ? :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/RBProfession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bloodGroup"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ff4081"
+                android:fontFamily="@font/droidserif_regular"
+                android:text="Student"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/rbCorporatePerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ff4081"
+                android:fontFamily="@font/droidserif_regular"
+                android:text="Corporate Person"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/RBProfession"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape2"
+            android:fontFamily="@font/droidserif_regular"
+            android:text="CLEAR"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnmSubmit"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/btnClear"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RBProfession"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape2"
+            android:fontFamily="@font/droidserif_regular"
+            android:text="SUBMIT"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

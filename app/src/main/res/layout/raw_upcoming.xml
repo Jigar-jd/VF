@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cdView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:padding="10dp"
+            android:layout_below="@+id/cdView"
+            android:background="@drawable/h">
+
+            <TextView
+                android:id="@+id/EventNo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/square"
+                android:layout_marginTop="20dp"
+                android:text="01"
+                android:padding="03dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/upcomingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ic_date"
+                android:layout_alignTop="@+id/EventNo"
+                android:fontFamily="@font/droidserif_regular"
+                android:text="TITLE"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/ic_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upcomingTitle"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/EventNo"
+                android:src="@drawable/ic_date_range_black_24dp" />
+
+            <TextView
+                android:id="@+id/upcomingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ic_location"
+                android:layout_toEndOf="@+id/ic_date"
+                android:paddingLeft="05dp"
+                android:text="date"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/ic_location"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="200dp"
+                android:layout_alignTop="@+id/ic_date"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/upcomingLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ic_location"
+                android:layout_toEndOf="@+id/ic_location"
+                android:paddingLeft="05dp"
+                android:text="Location"
+                android:textColor="#000000" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
